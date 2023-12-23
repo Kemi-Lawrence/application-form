@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+  </head>
+  <body>
+    <header>
+      <a href="#main" class="skip-navigation">Skip to Main Content</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <h1>Application Form</h1>
+      <p>Fill in your details</p>
+      <br />
+      <form>
+        <label>First Name*</label>
+        <input type="text" placeholder="Enter your first name" required />
+        <label>Last Name*</label>
+        <input type="text" placeholder="Enter your last name" required />
+        <br />
+        <br />
+        <label for="gender">Gender*</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="dob">Date of Birth*</label>
+        <input type="date" id="dob" name="dob" required />
+        <br />
+        <br />
+        <label>Email Address*</label>
+        <input type="email" placeholder="Enter email address" required />
+        <label>Educational Level*</label>
+        <select required>
+          <option value="" disabled selected>Select level of education</option>
+          <option value="HND">Higher National Diploma</option>
+          <option value="BSc">Bachelor of Science</option>
+          <option value="MSc">Master of Science</option>
+          <option value="MBA">Master of Business Administration</option>
+        </select>
+        <br />
+        <br />
+        <label for="country">Country*</label>
+        <select id="country" name="country" required>
+          <option value="" disabled selected>Select your country</option>
+          <option value="USA">United States</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">United Kingdom</option>
+          <option value="Australia">Australia</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Nigeria">Nigeria</option>
+        </select>
+        <label for="residence">State/City of Residence*</label>
+        <select id="residence" name="residence" required>
+          <option value="" disabled selected>Select your state/city</option>
+          <option value="Lagos/Nigeria">Lagos/Nigeria</option>
+          <option value="Accra/Ghana">Accra/Ghana</option>
+          <option value="New South Wales/Australia">
+            New South Wales/Australia
+          </option>
+          <option value="England/Uinted Kingdom">England/United Kingdom</option>
+          <option value="California/USA">California/United States</option>
+          <option value="Ontario/Canada">Ontario/Canada</option>
+        </select>
+        <br />
+        <br />
+        <label for="Employment Status">Employment Status*</label>
+        <select id="Employment" name="Employment" required>
+          <option value="" disabled selected>
+            Select your employment status
+          </option>
+          <option value="Self Employed">Self Employed</option>
+          <option value="Unemployed">Unemployed</option>
+          <option value="Employed">Employed</option>
+        </select>
+        
+        <label for="phone_number">Phone Number*</label>
+        <input
+          type="tel"
+          id="phone_number"
+          name="phone_number"
+          pattern="[0-9]{11}"
+          placeholder="08154387000"
+          required
+        />
+        <br />
+        <br />
+        <label>Choose School*</label>
+        <select required>
+          <option value="" disabled selected>Select school</option>
+          <option value="School of Engineering">School of Engineering</option>
+          <option value="School of Data">School of Data</option>
+          <option value="School of Product">School of Product</option>
+        </select>
+        <label>Choose Choice of Study*</label>
+        <select required>
+          <option value="" disabled selected>Select course</option>
+          <option>Front-end</option>
+          <option>Back-end Engineering</option>
+          <option>Data Science</option>
+          <option>Data Analytics</option>
+          <option>Data Engineering</option>
+          <option>DevOps Engineering</option>
+          <option>Salesforce</option>
+          <option>Digital Marketing</option>
+          <option>Graphics Design</option>
+          <option>Artificial Intelligence and Machine Learning</option>
+          <option>Content Creation</option>
+        </select>
+        <br />
+        <br />
+        <label>How did you hear about us?*</label>
+        <select id="channel" name="channel" required>
+          <option value="" disabled selected>Select channel</option>
+          <option>LinkedIn</option>
+          <option>Twitter</option>
+          <option>Facebook</option>
+          <option>Instagram</option>
+          <option>Blogs</option>
+          <option>Friends/Family</option>
+        </select>
+        <label>Scholarship/Discount Code (optional)</label>
+        <input type="text" placeholder="Scholarship or student ID or.." />
+        <p>
+          By clicking continue, I agree to
+          <a href="#" class="blue-link">Terms of Use</a> and acknowledge that I
+          have read the <a href="#" class="blue-link">Privacy Policy</a>
+        </p>
+        <input type="submit" value="Proceed" />
+      </form>
+      <p>
+        Already have an account?
+        <a href="../sign up/index.html" target="_blank" class="blue-link">Sign in</a
+        >
+      </p>
+    </main>
+  </body>
+</html>
